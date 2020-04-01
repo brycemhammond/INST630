@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Budget Calculator (HAMMOND INST630)</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="jQueryUI.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid center-me">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-1">
+          <div class="col-sm-4">
+          </div>
+
+          <button class="income-title" onclick="incomeShowHide()">Income</button>
+          <div id="box-income">
+            <form>
+              <input class="form-control input-lg" type="text" id="finance" placeholder="Student Finance"/>
+              <input class="form-control input-lg" type="text" id="income" placeholder="Income"/>
+              <input class="form-control input-lg" type="text" id="incomeOther" placeholder="Other"/>
+            </form>
+          </div>
+
+          <button class="livingCosts-title" onclick="livingCostsShowHide()">Living Costs</button>
+          <div id="box-livingCosts">
+            <form>
+              <input class="form-control input-lg" type="text" id="household" placeholder="Household Expenses"/>
+              <input class="form-control input-lg" type="text" id="food" placeholder="Food"/>
+              <input class="form-control input-lg" type="text" id="clothes" placeholder="Clothes/Shoes"/>
+              <input class="form-control input-lg" type="text" id="equipment" placeholder="Supplies"/>
+              <input class="form-control input-lg" type="text" id="travel" placeholder="Travel"/>
+              <input class="form-control input-lg" type="text" id="livingCostsOther" placeholder="Other"/>
+            </form>
+          </div>
+
+          <button class="social-title" onclick="socialShowHide()">Social and Entertainment</button>
+          <div id="box-social">
+            <form>
+              <input class="form-control input-lg" type="text" id="eatingOut" placeholder="Eating Out"/>
+              <input class="form-control input-lg" type="text" id="events" placeholder="Events"/>
+              <input class="form-control input-lg" type="text" id="transport" placeholder="Transportation"/>
+              <input class="form-control input-lg" type="text" id="socialOther" placeholder="Other"/>
+            </form>
+          </div>
+
+          <button class="utilities-title" onclick="utilitiesShowHide()">Home and Utilities</button>
+          <div id="box-utilities">
+            <form>
+              <input class="form-control input-lg" type="text" id="rent" placeholder="Rent"/>
+              <input class="form-control input-lg" type="text" id="utilities" placeholder="Gas/Water/Electric"/>
+              <input class="form-control input-lg" type="text" id="internet" placeholder="Internet"/>
+              <input class="form-control input-lg" type="text" id="insurance" placeholder="Insurance"/>
+              <input class="form-control input-lg" type="text" id="phone" placeholder="Phone"/>
+              <input class="form-control input-lg" type="text" id="utilitiesOther" placeholder="Other"/>
+            </form>
+            </form>
+          </div>
+
+          <button class="button" id="checkButton" onclick="add()">Calculate Budget</button>
+        </div>
+        <div class="col-sm-4">
+          <div class="results">
+              <div class="results-data">
+                <p id="result">Click submit to see your results.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <body>
+
+  <script src="main.js" type="text/javascript"></script>
+</html>
